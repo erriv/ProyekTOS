@@ -1,0 +1,13 @@
+Nama:Minified Monopoly
+
+Cara+fitur:- 2 player bergantian, roll dice, jalan sesuai angka yang keluar di dadu. 
+     - Setiap sampai di suatu tile, harus memilih beli atau sewa. Jika sudah ditempati oleh orang lain, maka harus menyewa
+     - JIka belum dibeli, bisa membeli rumah. Jika player kembali ke tempat itu lagi, dapat membangun hotel
+     - biaya sewa akan semakin mahal jika dimiliki orang lain
+     - Menggunakan linked list untuk masuk ke penjara. Jika masuk penjara, skip 3 turn
+     - Ada tile yang dapat mengmabil kartu dari tumpukan, memliki event-event tertentu
+     - setiap 5 turn masing-masing player. Ada climate change , yaitu LandSlide atau kebakaran. Saat landslide, semua mundur 3 tile, jika berhenti di tile penjara langsung masuk penjara. Jika kebakaran, rumah langsung hilang, hotel jadi rumah, yang hanya sewa harus membayar biaya perawatan 
+
+Struktur Data:Linked List
+
+Dipakai Di: untuk menunjuk setiap tile monopoli, dan point tile masuk penjara ke tile penjara. Setiap tile/node memilik 2 pointer, next & toPrison. toPrison saat masuk ke tile 'masuk penjara'.

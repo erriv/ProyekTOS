@@ -1,0 +1,48 @@
+<ScatterTextWidget>:
+	orientation: 'vertical'
+	TextInput:
+		id:txtin2
+		font_size:150
+		size_hint_y:None
+		height:200
+		text: 'default'
+		on_text:root.changeLabelColour()
+	BoxLayout:
+		orientation:'horizontal'
+		size_hint_y:None
+		height:150
+		Label:
+			id:lbl1
+			text:txtin2.text[:3][::-1]
+			font_size:100
+		Label:
+			id:lbl2
+			text:txtin2.text[:3]
+			font_size:100
+	Image:
+		center:root.center
+		source:'watch better anime.jpg'
+		keep_ratio:True
+		allow_stretch:False
+		
+<RootWidget>:
+	text:'The Background'
+	font_size:200
+	Image:
+		center:root.center
+		source:'watch better anime.jpg'
+		keep_ratio:False
+		allow_stretch:True
+	Image:
+		center:root.center
+		source:'watch better anime.jpg'
+		allow_stretch:True
+		
+<AnimRect>:
+	pos:210,400
+	canvas:
+		Color:
+			rgba:1,1,1,1
+		Rectangle:
+			pos:self.pos
+			size:200,200
